@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/login" element={<Login />}></Route>
           <Route exact path="/myorder/:id" element={<MyOrder />}></Route>
           <Route exact path="/signup" element={<Signup />}></Route>
-          <Route exact path="/AddEvent" element={<AddEvent />}></Route>
+          <Route exact path="/addevent" element={<AddEvent />}></Route>
         </Routes>
       </BrowserRouter>
     </>

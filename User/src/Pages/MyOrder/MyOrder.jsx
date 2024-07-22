@@ -12,7 +12,7 @@ function MyOrder() {
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
     const str = String(currentUser.userid);
     axios
-      .get(`http://localhost:3000/myorder/${str}`)
+      .get(`https://trac-gamma.vercel.app/myorder/${str}`)
       .then((response) => {
         setData(response.data);
         console.log(response.data);

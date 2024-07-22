@@ -31,7 +31,7 @@ function RegisterEvent() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/show-events/${id}`)
+      .get(`https://trac-gamma.vercel.app/show-events/${id}`)
       .then((response) => {
         setData(response.data);
 
@@ -54,13 +54,13 @@ function RegisterEvent() {
 
   const handleSubmit = async (event) => {
     const temp = id + currId;
-    console.log(temp);
+  
     SetRegid(temp);
-    console.log("----------", regid, "-----------");
+  
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3000/reg-event", {
+      const response = await axios.post("https://trac-gamma.vercel.app/reg-event", {
         id,
         regData: regData,
         total,

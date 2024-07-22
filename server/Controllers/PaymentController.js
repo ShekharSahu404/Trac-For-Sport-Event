@@ -36,7 +36,7 @@ module.exports.Payment = async (req, res) => {
       ],
       customer: customer.id,
       mode: "payment",
-      success_url: `http://localhost:5173/myorder/${data.buyerId}`,
+      success_url: `https://trac-for-event.vercel.app/myorder/${data.buyerId}`,
       cancel_url: "http://localhost:5173/cancel",
     });
 

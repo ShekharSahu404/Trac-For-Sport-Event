@@ -39,7 +39,7 @@ export default function Example({ username, handleLogout }) {
           >
             <MenuItem>
               <a
-                href="/addevent"
+                href="/AddEvent"
                 className="group flex w-full items-center gap-2 rounded-lg font-pop py-1.5 px-3 data-[focus]:bg-white/10"
               >
                 <PencilIcon className="size-4 fill-white/30" />

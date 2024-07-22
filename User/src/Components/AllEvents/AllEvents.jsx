@@ -20,7 +20,7 @@ export default function AllEvents() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/show-events")
+      .get("https://trac-gamma.vercel.app/show-events")
       .then((response) => setData(response.data), setLoading(false))
       .catch((error) => console.error(error));
   }, []);

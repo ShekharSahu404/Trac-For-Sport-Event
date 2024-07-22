@@ -14,7 +14,7 @@ export default function Header() {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:3000/logout");
+      await axios.post("https://trac-gamma.vercel.app/logout");
       localStorage.setItem("currentUser", null);
       navigate("/");
     } catch (err) {
